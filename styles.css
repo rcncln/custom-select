@@ -27,11 +27,14 @@ body {
   );
   background-repeat: no-repeat;
   height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .custom-select-wrapper {
   position: relative;
   width: 200px;
+  margin: 25px;
+  letter-spacing: 1px;
 }
 
 .custom-select {
