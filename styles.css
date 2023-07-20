@@ -1,99 +1,85 @@
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-/* Styling the dropdown container */
 .custom-select-wrapper {
-    position: relative;
-    width: 200px; /* Adjust the width as needed */
-  }
-  
-  /* Styling the custom dropdown */
-  .custom-select {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    background-color: burlywood;
-    border: 1px solid palevioletred;
-    border-radius: 5px;
-    cursor: pointer;
+  position: relative;
+  width: 200px;
+}
 
-  }
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: burlywood;
+  border: 1px solid palevioletred;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .custom-select:hover {
-    box-shadow: 0px 0px 10px blanchedalmond;
-  }
+.custom-select:hover {
+  box-shadow: 0px 0px 10px blanchedalmond;
+}
 
-  .custom-select.active {
-    box-shadow: 0px 0px 10px blanchedalmond;
+.custom-select.active {
+  box-shadow: 0px 0px 10px blanchedalmond;
+}
 
-  }
-  
-  /* Styling the selected option */
-  .selected-option {
-    display: block;
-    padding: 8px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Styling the dropdown options */
-  .options {
-    position: absolute;
-    top: 140%;
-    left: 0;
-    width: 100%;
-    background-color: greenyellow;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px yellow;
-  }
-  
-  .option {
-    padding: 8px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  /* Show the options when the dropdown is open */
-  .custom-select.active .options {
-    display: block;
-  }
-  
-  /* Style the options on hover */
-  .option:hover {
-    background-color: pink;
-  }
-  
-  
+.selected-option {
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+  color: #333;
+}
 
-  /* Styling the dropdown when it's open */
-  .custom-select:focus {
-    border-color: #3b82f6; /* Change the border color on focus */
-  }
-  
-  /* Positioning and styling the dropdown triangle */
-  .custom-select::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #666; /* Adjust the color of the dropdown triangle */
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-  
-  .custom-select.active::after {
-    border-top-color: #3b82f6; /* Adjust the color of the dropdown triangle on focus */
-  }
-  
+.options {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  width: 100%;
+  background-color: greenyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px yellow;
+}
+
+.option {
+  padding: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-select.active .options {
+  display: block;
+}
+
+.option:hover {
+  background-color: pink;
+}
+
+.custom-select:focus {
+  border-color: #3b82f6; /* Change the border color on focus */
+}
+
+.custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666; /* Adjust the color of the dropdown triangle */
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-select.active::after {
+  border-top-color: #3b82f6; /* Adjust the color of the dropdown triangle on focus */
+}
