@@ -2,5 +2,5 @@
 
 ## created a styleable option selection
 
+![Example](images/select.png)
 
-<img src="images/select.png" alt="Example Image" width="500">
