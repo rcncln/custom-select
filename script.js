@@ -13,22 +13,7 @@ function setSelectedOption(select, option) {
     toggleOptions(select);
 }
 
-// Event listeners for each custom select
-customSelects.forEach((select) => {
-    const options = select.querySelectorAll(".option");
 
-    // Toggle options visibility when the custom select is clicked
-    select.addEventListener("click", () => {
-        toggleOptions(select);
-    });
-
-    // Set the selected option when an option is clicked
-    options.forEach((option) => {
-        option.addEventListener("click", () => {
-            setSelectedOption(select, option);
-        });
-    });
-});
 
 window.addEventListener('click', () => {
     const customSelect = document.querySelector('.custom-select')
