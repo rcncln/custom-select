@@ -3,6 +3,23 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .custom-select-wrapper {
@@ -14,10 +31,11 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
-  background-color: burlywood;
+  background-color: paleturquoise;
   border: 1px solid palevioletred;
   border-radius: 5px;
   cursor: pointer;
+  transition: box-shadow 250ms ease-in-out;
 }
 
 .custom-select:hover {
@@ -63,7 +81,7 @@ body {
 }
 
 .custom-select:focus {
-  border-color: #3b82f6; /* Change the border color on focus */
+  border-color: #3b82f6;
 }
 
 .custom-select::after {
@@ -75,11 +93,11 @@ body {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #666; /* Adjust the color of the dropdown triangle */
+  border-top: 6px solid #666;
   transform: translateY(-50%);
   pointer-events: none;
 }
 
 .custom-select.active::after {
-  border-top-color: #3b82f6; /* Adjust the color of the dropdown triangle on focus */
+  border-top-color: #3b82f6;
 }
