@@ -58,6 +58,7 @@ body {
   padding: 8px;
   font-size: 16px;
   color: #333;
+  padding-left: 15px;
 }
 
 .options {
@@ -71,12 +72,14 @@ body {
   display: none;
   border-radius: 10px;
   box-shadow: 5px 5px yellow;
+  overflow: hidden;
 }
 
 .option {
   padding: 8px;
   font-size: 16px;
   color: #333;
+  padding-left: 15px;
 }
 
 .custom-select.active .options {
